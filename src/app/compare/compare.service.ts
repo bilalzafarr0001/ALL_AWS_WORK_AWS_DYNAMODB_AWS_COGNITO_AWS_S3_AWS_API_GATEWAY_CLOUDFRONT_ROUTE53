@@ -51,6 +51,7 @@ export class CompareService {
     this.dataLoadFailed.next(false);
     this.authService.getAuthenticatedUser().getSession((err, session) => {
        const queryParam = '?accessToken=' + session.getAccessToken().getJwtToken();
+      console.log(session.getAccessToken().getJwtToken());
       let urlParam = 'all';
       if (!all) {
         urlParam = 'single';
@@ -68,7 +69,7 @@ export class CompareService {
                
               this.dataLoaded.next(data);
             } else {
-             
+              
               if (!data) {
                 this.dataLoadFailed.next(true);
                 return;

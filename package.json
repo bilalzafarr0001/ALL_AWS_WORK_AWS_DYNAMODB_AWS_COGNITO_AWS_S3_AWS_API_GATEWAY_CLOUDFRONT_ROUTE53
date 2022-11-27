@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -23,6 +23,7 @@
     "amazon-cognito-identity-js": "^1.17.0",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "enhanced-resolve": "^3.3.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
